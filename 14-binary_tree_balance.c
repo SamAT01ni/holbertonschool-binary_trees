@@ -4,12 +4,12 @@
  * binary_tree_height - measures height of the tree
  * @tree: pointer to root
  *
- * Return: height or 0 if null
+ * Return: height or -1 if null
  */
 
-size_t binary_tree_height(const binary_tree_t *tree)
+int binary_tree_height(const binary_tree_t *tree)
 {
-	size_t left, right;
+	int left, right;
 
 	if (tree == NULL)
 		return (-1);
